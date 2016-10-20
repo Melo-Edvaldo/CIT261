@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Object Creation</title>
+
+
+
+<script>
+function person(name, age)
+{
+	this.name = name;
+	this.age = age;
+}
+ 
+var hillary = new person("hillary", 10000000);
+var trump = new person("Trump", 1000000);
+
+ </script>
+
+</head>
+<body>
+	<script type="text/javascript">
+document.write(trump.age);
+document.write(hillary.age);
+
+</script>
+
+</body>
+</html>

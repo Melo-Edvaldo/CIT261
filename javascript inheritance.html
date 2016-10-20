@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Object Creation</title>
+
+
+
+<script>
+//establish a parents class
+function Parentclass()
+{
+	this.parent_property1 = "Hola";
+	this.parentmethod1 = function parentmethod1 (arg1)
+	{
+		return arg1+" Parent method 1 return data . . . ";
+	}
+}
+// Establish a child class
+function Childclass()
+{
+	this.child_property1 = "Adios";
+	this.childmethod1 = function childmethod1(arg1)
+	{
+		return arg1+" Child method 1 return data . . . .";
+	}
+}
+//make the childClass inherit all of the parent class characteristics
+//by using the prototype property
+Childclass.prototype = new Parentclass();
+//create a new instance of Childclass
+var instance1 = new Childclass();
+//access the instance methods and properties
+alert( instance1.parentmethod1 ("Result: "));
+alert( instance1.childmethod1("Result:  "));
+alert(instance1.parent_property1);
+alert(instance1.child_property1);
+//override parentmethod1 in the Childclass
+Childclass.prototype.parentmethod1 = function parentmethod1(arg1)
+{
+	return arg1+" I have overridden Parent method 1";
+}
+alert(instance1.parentmethod1("Result:  "));
+
+ </script>
+
+</head>
+<body>
+	<script type="text/javascript">
+
+</script>
+
+</body>
+</html>
