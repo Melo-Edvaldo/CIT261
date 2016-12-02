@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer{
+    padding: 1em;
+    color: white;
+    background-image: url("https://s11.postimg.org/6bo30rzib/wood.jpg");
+	background-repeat: no-repeat;
+	background-size: 1450px 120px;
+    clear: left;
+    text-align: center;
+	text-shadow: 5px 5px 3px black;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+	height: 950px;
+    margin: 0;
+    padding: 1em;
+	box-shadow: 5px 1px 2px black;
+	background-image: url("https://s18.postimg.org/679v9qqrt/paper2.jpg");
+	background-repeat: no-repeat;
+	background-size: 200px 1000px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+	font-size: 20pt;
+	font-family: arial black;
+	color: #CC3300;
+	text-shadow: 1px 1px 1px black;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+	background-image: url("https://s18.postimg.org/679v9qqrt/paper2.jpg");
+	background-repeat: no-repeat;
+	background-size: 1450px 1000px;
+}
+</style>
+<script>
+function myFunction(x) {
+    x.style.background = "#D6CFA5";
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1 onmouseover="style.color='#D6CFA5'"
+onmouseout="style.color='white'">LDS Home Teaching Reports - Bishop DashBoard</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="HomeTeachingBishopUI.html">Bishop</a></li><br>
+    <li><a href="HomeTeachingEQPUI.html">Elder's Quorum President</a></li><br>
+    <li><a href="HomeTeachingTeachersUI.html">Visitors</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h2>Home Teachings Report</h2>
+
+<form action="mailto:mcneil11619@gmail.com" method="post" enctype="text/plain">
+<h3>First Teacher's Name:</h3><br>
+<input type="text" name="name" onfocus="myFunction(this)"><br>
+<h3>Second Teacher's Name:</h3><br>
+<input type="text" name="name" onfocus="myFunction(this)"><br>
+<h3>Priesthood Leader/ Home Patriarch:</h3><br>
+<input type="text" name="name" onfocus="myFunction(this)"><br>
+<h3>Number of Persons at Home:</h3><br>
+<input type="text" name="name" onfocus="myFunction(this)"><br>
+<h3>Comments about the homes visited:</h3><br>
+<input type="text" name="comment" size="50" onfocus="myFunction(this)"><br><br>
+<h3>Comments about the visitors:</h3><br>
+<input type="text" name="comment" size="150" onfocus="myFunction(this)"><br><br>
+<h3>Responses to the Elder's Quorum President:</h3><br>
+<input type="text" name="comment" size="150" onfocus="myFunction(this)"><br><br>
+<h3>Decisions for these Homes:</h3><br>
+<input type="text" name="comment" size="150" onfocus="myFunction(this)"><br><br>
+<input type="submit" onclick="alert('Your report is sent!')" value="Send">
+<input type="reset" value="Reset">
+</form>
+<br>
+</article>
+
+<footer>Copyright © LDSWardOfTorcelle</footer>
+
+</div>
+
+</body>
+</html>
