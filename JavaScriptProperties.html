@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>There are two different ways to access an object property:</p>
+		<p>You can use <b>.property</b> or <b>["property"]</b>.</p>
+
+		<p id="example"></p>
+
+		<script>
+			var person =
+			{
+				firstname: "John",
+				lastname: "Doe",
+				age: 50,
+				eyecolor: "blue"
+			};
+			
+			document.getElementById("example").innerHTML =
+			person.firstname + " " + person.lastname + " is " + person.age + " years old " + "and his eyes are " + person.eyecolor + ".";
+		</script>
+	</body>
+</html>
